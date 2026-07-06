@@ -1,0 +1,20 @@
+[1/5] 抓取分类列表页...
+    列表页: 17 页
+    发现文章: 158 篇
+[2/5] 抓取文章 HTML（增量，仅新增/变更）...
+    25 / 158
+    50 / 158
+    75 / 158
+    100 / 158
+    125 / 158
+    150 / 158
+    抓取完成: 158 篇
+[3/5] 解析为 Markdown...
+    解析: 158 篇, 7412 chars desc
+    {"count": 158}
+[4/5] 清理已失效文章...
+    references/ 现存: 158 篇
+[5/5] 完成。
+  skill 目录: /Users/dingyi/.agents/skills/edu-rader
+  文章数: 158
+  下次自动刷新由 launchd 周一 03:00 触发 (cn.bao.edumails-rader-refresh)。

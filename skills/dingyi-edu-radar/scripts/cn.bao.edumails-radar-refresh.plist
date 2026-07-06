@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <!--
-  edu-radar 每周自动刷新定时任务模板。
+  dingyi-edu-radar 每周自动刷新定时任务模板。
   使用前：把下方的 <HOME> 替换为你的用户主目录（如 /Users/yourname），
   然后复制到 ~/Library/LaunchAgents/ 并执行：
     launchctl load ~/Library/LaunchAgents/cn.bao.edumails-radar-refresh.plist
@@ -13,7 +13,7 @@
 
     <key>ProgramArguments</key>
     <array>
-        <string><HOME>/.agents/skills/edu-radar/scripts/refresh.sh</string>
+        <string><HOME>/.agents/skills/dingyi-edu-radar/scripts/refresh.sh</string>
     </array>
 
     <!-- 每周一 03:00 触发 -->
@@ -31,9 +31,9 @@
     <false/>
 
     <key>StandardOutPath</key>
-    <string><HOME>/.agents/skills/edu-radar/scripts/refresh.log</string>
+    <string><HOME>/.agents/skills/dingyi-edu-radar/scripts/refresh.log</string>
     <key>StandardErrorPath</key>
-    <string><HOME>/.agents/skills/edu-radar/scripts/refresh.log</string>
+    <string><HOME>/.agents/skills/dingyi-edu-radar/scripts/refresh.log</string>
 
     <!-- 环境变量：按你的 python3 + bs4 实际路径调整 -->
     <key>EnvironmentVariables</key>
