@@ -1,5 +1,5 @@
-# 刷新日志（每次运行动态生成）
-skills/edu-radar/scripts/refresh.log
+# 刷新日志（每次运行动态生成，不跟 skill 目录名绑定）
+refresh.log
 
 # macOS
 .DS_Store
