@@ -1,0 +1,19 @@
+README.md
+  s_970a9cc85f3400::t_9156fea739e084 113,117,120,126-128
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "ff82a25bf4a7e20b77c088ee61b7288dfcf95a87",
+  "prompts": {},
+  "sessions": {
+    "s_970a9cc85f3400": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f36f8-3d59-75e1-b068-fda65a2bf402",
+        "model": "gpt-5.4"
+      },
+      "human_author": "Ding Yi <dingyimac@gmail.com>"
+    }
+  }
+}
