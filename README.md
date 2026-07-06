@@ -32,7 +32,7 @@
 通过 [skills](https://github.com/vercel-labs/skills) CLI 一键安装，自动适配 Claude Code、Codex、Cursor、ZCode、OpenCode 等 70+ agent：
 
 ```bash
-npx skills add dingyi/edu-radar-skill
+npx skills add dingyi/dingyi-edu-radar-skill
 ```
 
 CLI 会自动检测你正在使用的 agent，把 skill 装到对应目录（如 Claude Code 的 `~/.claude/skills/`、ZCode 的 `~/.agents/skills/` 等）。
@@ -43,13 +43,13 @@ CLI 会自动检测你正在使用的 agent，把 skill 装到对应目录（如
 
 ```bash
 # Claude Code / Codex / ZCode 通用路径
-git clone https://github.com/dingyi/edu-radar-skill.git ~/.agents/skills/edu-radar
+git clone https://github.com/dingyi/dingyi-edu-radar-skill.git ~/.agents/skills/edu-radar
 ```
 
 或放到项目级目录（仅当前项目生效）：
 
 ```bash
-git clone https://github.com/dingyi/edu-radar-skill.git your-project/.agents/skills/edu-radar
+git clone https://github.com/dingyi/dingyi-edu-radar-skill.git your-project/.agents/skills/edu-radar
 ```
 
 > Skill 发现优先级：`.zcode/skills/` > `.agents/skills/` > `~/.zcode/skills/` > `~/.agents/skills/`。
