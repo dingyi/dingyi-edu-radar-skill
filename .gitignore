@@ -1,0 +1,9 @@
+# 刷新日志（每次运行动态生成）
+skills/edu-radar/scripts/refresh.log
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
