@@ -3,11 +3,12 @@
 ![](https://img.shields.io/badge/skill-edu--radar-blue?style=flat-square)
 ![](https://img.shields.io/badge/articles-249-green?style=flat-square)
 ![](https://img.shields.io/badge/refresh-weekly-orange?style=flat-square)
+![](https://img.shields.io/badge/install-npx%20skills-black?style=flat-square)
 ![](https://img.shields.io/badge/license-MIT-lightgrey?style=flat-square)
 
 > 像雷达一样扫描教育优惠——「Replit 有没有学生折扣？」「美国哪些大学能申请 edu 邮箱？」一问就答。
 
-一个 [ZCode](https://z.ai) / Claude Code Skill，把 [edumails.cn](https://www.edumails.cn) 上 **249 篇**教育邮箱相关图文教程索引成可检索的知识库，让 AI 助手能精准回答两类问题：
+一个 agent skill，把 [edumails.cn](https://www.edumails.cn) 上 **249 篇**教育邮箱相关图文教程索引成可检索的知识库，让 Claude Code、Codex、ZCode 等 AI 助手能精准回答两类问题：
 
 1. **优惠查询** —— 某个产品/网站有没有教育优惠、学生折扣、edu 邮箱白嫖方案（Replit、Notion、Figma、JetBrains、GitHub Copilot、ChatGPT、Grok、Gemini、MATLAB、Adobe、Perplexity …）
 2. **edu 邮箱申请** —— 美国/加拿大/澳洲/德国/日本/台湾/越南等地哪些院校能申请 edu 邮箱，以及具体申请方法（学校官网、申请入口、邮箱后缀、审核速度、附赠权益）
@@ -26,30 +27,38 @@
 
 ## 📦 安装
 
-### 方式一：克隆到 ZCode/Claude Code 的 skills 目录
+### 方式一：用 `npx skills`（推荐）
+
+通过 [skills](https://github.com/vercel-labs/skills) CLI 一键安装，自动适配 Claude Code、Codex、Cursor、ZCode、OpenCode 等 70+ agent：
 
 ```bash
-# ZCode 默认发现路径之一
+npx skills add dingyi/edu-radar-skill
+```
+
+CLI 会自动检测你正在使用的 agent，把 skill 装到对应目录（如 Claude Code 的 `~/.claude/skills/`、ZCode 的 `~/.agents/skills/` 等）。
+
+### 方式二：手动克隆
+
+如果你不想用 CLI，也可以直接 clone 到对应 agent 的 skills 目录：
+
+```bash
+# Claude Code / Codex / ZCode 通用路径
 git clone https://github.com/dingyi/edu-radar-skill.git ~/.agents/skills/edu-radar
 ```
 
-或放到项目级目录：
+或放到项目级目录（仅当前项目生效）：
 
 ```bash
 git clone https://github.com/dingyi/edu-radar-skill.git your-project/.agents/skills/edu-radar
 ```
 
-> Skill 发现优先级：`.zcode/skills/` > `.agents/skills/` > `~/.zcode/skills/` > `~/.agents/skills/`。详见 [skill-creator](https://github.com/dingyi/edu-radar-skill) 文档。
-
-### 方式二：手动复制
-
-把 `skills/edu-radar/` 整个目录复制到上述任一 skills 目录即可。
+> Skill 发现优先级：`.zcode/skills/` > `.agents/skills/` > `~/.zcode/skills/` > `~/.agents/skills/`。
 
 ---
 
 ## 🚀 使用
 
-安装后，在 ZCode / Claude Code 里直接用自然语言提问，skill 会自动触发：
+安装后，在 Claude Code / Codex / ZCode 里直接用自然语言提问，skill 会自动触发：
 
 ```
 Replit 有教育优惠吗？
