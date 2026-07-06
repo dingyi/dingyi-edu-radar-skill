@@ -110,21 +110,22 @@ dingyi-edu-radar-skill/
 
 ## 🔄 自动刷新（可选）
 
-本 skill 内置每周自动刷新能力（macOS）：
+本 skill 内置每周自动刷新能力（macOS）。用 `bash` 调用，无需可执行权限：
 
 ```bash
 # 手动增量刷新（只拉新文章）
-./skills/dingyi-edu-radar/scripts/refresh.sh
+bash skills/dingyi-edu-radar/scripts/refresh.sh
 
 # 全量重建
-./skills/dingyi-edu-radar/scripts/refresh.sh --full
+bash skills/dingyi-edu-radar/scripts/refresh.sh --full
 ```
 
 注册成 macOS launchd 定时任务（每周一 03:00 自动运行）：
 
 ```bash
-cp skills/dingyi-edu-radar/scripts/cn.bao.edumails-radar-refresh.plist \
-   ~/Library/LaunchAgents/
+# 把模板里的 <HOME> 替换为你的主目录后复制
+sed 's#<HOME>#'"$HOME"'#g' skills/dingyi-edu-radar/scripts/cn.bao.edumails-radar-refresh.plist \
+   > ~/Library/LaunchAgents/cn.bao.edumails-radar-refresh.plist
 launchctl load ~/Library/LaunchAgents/cn.bao.edumails-radar-refresh.plist
 ```
 

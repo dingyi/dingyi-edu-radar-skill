@@ -13,6 +13,7 @@
 
     <key>ProgramArguments</key>
     <array>
+        <string>/bin/bash</string>
         <string><HOME>/.agents/skills/dingyi-edu-radar/scripts/refresh.sh</string>
     </array>
 
