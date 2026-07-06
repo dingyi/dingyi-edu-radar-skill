@@ -43,13 +43,13 @@ CLI 会自动检测你正在使用的 agent，把 skill 装到对应目录（如
 
 ```bash
 # Claude Code / Codex / ZCode 通用路径
-git clone https://github.com/dingyi/dingyi-edu-radar-skill.git ~/.agents/skills/edu-radar
+git clone https://github.com/dingyi/dingyi-edu-radar-skill.git ~/.agents/skills/dingyi-edu-radar
 ```
 
 或放到项目级目录（仅当前项目生效）：
 
 ```bash
-git clone https://github.com/dingyi/dingyi-edu-radar-skill.git your-project/.agents/skills/edu-radar
+git clone https://github.com/dingyi/dingyi-edu-radar-skill.git your-project/.agents/skills/dingyi-edu-radar
 ```
 
 > Skill 发现优先级：`.zcode/skills/` > `.agents/skills/` > `~/.zcode/skills/` > `~/.agents/skills/`。
@@ -71,7 +71,7 @@ edu 邮箱能薅哪些 AI 编程工具？
 也可以用斜杠命令强制加载：
 
 ```
-/edu-radar 印第安纳大学的校友 edu 邮箱怎么申请
+/dingyi-edu-radar 印第安纳大学的校友 edu 邮箱怎么申请
 ```
 
 ### 示例输出
@@ -88,11 +88,11 @@ edu 邮箱能薅哪些 AI 编程工具？
 ## 📂 项目结构
 
 ```
-edu-radar-skill/
+dingyi-edu-radar-skill/
 ├── README.md
 ├── LICENSE
 └── skills/
-    └── edu-radar/
+    └── dingyi-edu-radar/
         ├── SKILL.md            # skill 主文件（触发条件 + 查询工作流）
         ├── catalog.json        # 249 条索引（slug / title / kw / file）
         ├── CATALOG.md          # 人类可读目录
@@ -114,16 +114,16 @@ edu-radar-skill/
 
 ```bash
 # 手动增量刷新（只拉新文章）
-./skills/edu-radar/scripts/refresh.sh
+./skills/dingyi-edu-radar/scripts/refresh.sh
 
 # 全量重建
-./skills/edu-radar/scripts/refresh.sh --full
+./skills/dingyi-edu-radar/scripts/refresh.sh --full
 ```
 
 注册成 macOS launchd 定时任务（每周一 03:00 自动运行）：
 
 ```bash
-cp skills/edu-radar/scripts/cn.bao.edumails-radar-refresh.plist \
+cp skills/dingyi-edu-radar/scripts/cn.bao.edumails-radar-refresh.plist \
    ~/Library/LaunchAgents/
 launchctl load ~/Library/LaunchAgents/cn.bao.edumails-radar-refresh.plist
 ```
@@ -131,7 +131,7 @@ launchctl load ~/Library/LaunchAgents/cn.bao.edumails-radar-refresh.plist
 查看刷新日志：
 
 ```bash
-tail -f skills/edu-radar/scripts/refresh.log
+tail -f skills/dingyi-edu-radar/scripts/refresh.log
 ```
 
 > **依赖**：`curl` + `python3`（含 `beautifulsoup4`、`lxml`）

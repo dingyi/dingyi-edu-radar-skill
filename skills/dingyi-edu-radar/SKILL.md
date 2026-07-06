@@ -1,5 +1,5 @@
 ---
-name: edu-radar
+name: dingyi-edu-radar
 description: 查询教育邮箱（.edu 邮箱）相关两类信息：(1) 用 edu 邮箱能享受哪些产品/服务的教育优惠、学生折扣或免费福利；(2) 各大学/院校的 edu 邮箱怎么申请。当用户询问某个网站/软件/AI 产品有没有学生优惠、教育优惠、是否可用 edu 邮箱白嫖，或反过来问"有哪些教育邮箱能用 X"、"edu 邮箱能薅什么羊毛"、"学生认证怎么做"，或问"美国/某地有哪些大学能申请 edu 邮箱"、"XX 大学的 edu 邮箱怎么拿"、"校友邮箱怎么申请"时使用本 skill。覆盖 Replit、Notion、Figma、JetBrains、GitHub Copilot、ChatGPT、Grok、Gemini、MATLAB、Adobe、Perplexity 等 150+ 产品优惠，以及 70+ 所美国院校（含社区大学、州立大学、校友邮箱）和加澳澳德日台越等地院校的 edu 邮箱申请方法。数据来源于 https://www.edumails.cn/us 和 https://www.edumails.cn/edu 。
 ---
 

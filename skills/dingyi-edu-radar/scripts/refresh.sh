@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# refresh.sh — 重新抓取 edumails.cn 的多个分类并重建 edu-radar skill 的内容。
+# refresh.sh — 重新抓取 edumails.cn 的多个分类并重建 dingyi-edu-radar skill 的内容。
 #
 # 覆盖分类:
 #   /us  — edu 国外教育优惠（用 edu 邮箱能薅的产品优惠）
